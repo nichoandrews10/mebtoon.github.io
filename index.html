@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/base.js" defer></script>
+    <title>Home</title>
+</head>
+
+<body>
+
+    <div class="navbar-container">
+
+        <div class="navbar-nav-header">
+            <div class="navbar-icon-container">
+                <div class="navbar-icon">
+                    <a href="index.html">
+                        <img src="./assets/img/logo-white.svg" alt="" height="50px">
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar-nav-btn" id="nav-check">
+                <span>
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
+        </div>
+
+        <nav class="navbar-nav-items collapsed" id="nav-items">
+            <a href="category.html">Category</a>
+            <a href="top_authors.html">Top Author</a>
+            <a href="top_mebtoons.html">Top MebToon</a>
+            <a href="subscribe.html">Subscribe</a>
+        </nav>
+
+    </div>
+    <section class="slideshow">
+        <div class="imgslider-container" id="slider-container">
+            <!-- content loaded by slider_init() assets/js/index.js: -->
+            <!-- <div class="imgslider-page" style="background-image: url(&quot;./assets/img/teenage_dragon/bg.jpg&quot;);">
+                <div class="imgslider-text-container">
+                    <h1 class="imgslider-title">Teenage Dragon</h1>
+                    <p class="imgslider-author">Peanut</p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <section class="tagline">
+        <div class="tagline-container">
+            <h1 class="tagline-text">Read Manhua, Manhwa and Mangas<br>Only On MebToon!</h1>
+            <a class="btn subscribe-btn" href="./subscribe.html">Subscribe Now</a>
+        </div>
+    </section>
+    <section class="toons-cards popular">
+        <div class="section-title">
+            <h2>Popular</h2>
+        </div>
+
+        <div class="toons-cards-container" id="toons-cards-popular">
+            <!-- content loaded by toons_cards_init() assets/js/index.js: -->
+            <!-- <div class="toons-card" style="background-image: url(&quot;./assets/img/teenage_dragon/thumb.jpg&quot;);">
+                <div class="toons-card-info">
+                    <h3 class="toons-card-title">Teenage Dragon</h3>
+                    <p class="toons-card-subscribers"><i class="fa-solid fa-heart"></i> 1.2M</p>
+                    <p class="toons-card-author">Peanut</p>
+                    <p class="toons-card-genre">Comedy</p>
+                </div>
+                <div class="toons-card-description">
+                    <p class="toons-card-title">Teenage Dragon</p>
+                    <p>Teenage Dragon is a comic book series written and illustrated by Peanut. The series is based on the popular manga series of the same name.</p>
+                </div>
+            </div> -->
+        </div>
+        <hr>
+    </section>
+    <section class="toons-cards recommended">
+        <div class="section-title">
+            <h2>For Newcomers</h2>
+        </div>
+
+        <div class="toons-cards-container" id="toons-cards-recommended">
+            <!-- content loaded by toons_cards_init() assets/js/index.js: -->
+            <!-- <div class="toons-card" style="background-image: url(&quot;./assets/img/teenage_dragon/thumb.jpg&quot;);">
+                <div class="toons-card-info">
+                    <h3 class="toons-card-title">Teenage Dragon</h3>
+                    <p class="toons-card-subscribers"><i class="fa-solid fa-heart"></i> 1.2M</p>
+                    <p class="toons-card-author">Peanut</p>
+                    <p class="toons-card-genre">Comedy</p>
+                </div>
+                <div class="toons-card-description">
+                    <p class="toons-card-title">Teenage Dragon</p>
+                    <p>Teenage Dragon is a comic book series written and illustrated by Peanut. The series is based on the popular manga series of the same name.</p>
+                </div>
+            </div> -->
+        </div>
+        <hr>
+    </section>
+    <section class="tops">
+        <div class="section-title">
+            <h2>Top This Month</h2>
+        </div>
+        <div class="tops-container">
+            <div class="col">
+                <h2 class="tops-title">
+                    <a href="top_authors.html">Top Author </a><i class="fa-solid fa-chevron-right"></i>
+                </h2>
+                <div class="tops-cards-container" id="tops-author">
+                    <!-- <a class="tops-card" href="#">
+                        <div class="tops-card-number">
+                            <p>#1</p>
+                        </div>
+                        <div class="tops-card-thumbnail">
+                            <img src="./assets/img/teenage_dragon/thumb.jpg" alt="">
+                        </div>
+                        <div class="tops-card-info">
+                            <p class="tops-card-genre">Comedy</p>
+                            <h3 class="tops-card-title">Peanut</h3>
+                            <p class="tops-card-subscribers"><i class="fa-solid fa-heart"></i> 1.2M followers</p>
+                            <p class="tops-card-author">Peanut</p>
+                        </div>
+                    </a> -->
+                </div>
+            </div>
+            <div class="col">
+                <h2 class="tops-title">
+                    <a href="top_mebtoons.html">Top MebToons </a> <i class="fa-solid fa-chevron-right"></i>
+                </h2>
+                <div class="tops-cards-container" id="tops-mebtoon">
+                    <!-- <a class="tops-card" href="#">
+                        <div class="tops-card-number">
+                            <p>#1</p>
+                        </div>
+                        <div class="tops-card-thumbnail">
+                            <img src="./assets/img/teenage_dragon/thumb.jpg" alt="">
+                        </div>
+                        <div class="tops-card-info">
+                            <p class="tops-card-genre">Comedy</p>
+                            <h3 class="tops-card-title">Peanut</h3>
+                            <p class="tops-card-subscribers"><i class="fa-solid fa-heart"></i> 1.2M followers</p>
+                            <p class="tops-card-author">Peanut</p>
+                        </div>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="./assets/img/logo.svg" alt="" height="50px">
+                    </div>
+                    <div class="footer-copyright">
+                        <p>&copy; LAB_BD11 2440049241 - 2440014894
+                            <p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </section>
+    <script type=" text/javascript " src="./assets/js/index.js "></script>
+</body>
+
+</html>

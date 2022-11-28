@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/subscribe.css">
+</head>
+
+<body>
+
+    <div class="navbar-container">
+
+        <div class="navbar-nav-header">
+            <div class="navbar-icon-container">
+                <div class="navbar-icon">
+                    <a href="index.html">
+                        <img src="./assets/img/logo-white.svg" alt="" height="50px">
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar-nav-btn" id="nav-check">
+                <span>
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
+        </div>
+
+        <nav class="navbar-nav-items collapsed" id="nav-items">
+            <a href="category.html">Category</a>
+            <a href="top_authors.html">Top Author</a>
+            <a href="top_mebtoons.html">Top MebToon</a>
+            <a href="subscribe.html">Subscribe</a>
+        </nav>
+
+    </div>
+
+    <section class="form-section">
+        <div class="container">
+            <h1 class="title">Subscribe</h1>
+            <form action="#" onsubmit="event.preventDefault(); validateForm()">
+                <div class="user-details">
+
+                    <div class="input-box">
+                        <label for="name" class="details">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                        <small class="error"></small>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email" class="details">Email</label>
+                        <input type="text" id="email" placeholder="Enter your email">
+                        <small class="error"></small>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="phone-number" class="details">Phone Number</label>
+                        <input type="text" id="phone-number" placeholder="Enter your phone number">
+                        <small class="error"></small>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="country" class="details">Country</label>
+                        <input type="text" id="country" placeholder="Enter your country">
+                        <small class="error"></small>
+                    </div>
+
+                    <div class="terms-and-condition">
+                        <input type="checkbox" name="dot-1" id="dot-1">
+                        <div class="tnc">
+                            <label class="tnc-label" for="dot-1">
+                                <span class="dot one"></span>
+                                <span class="terms">Agree to our terms and condition</span>
+                            </label>
+                            <small class="error"></small>
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <input type="submit" class="submit" value="Subscribe">
+                        <p id="success"></p>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="./assets/img/logo.svg" alt="" height="50px">
+                    </div>
+                    <div class="footer-copyright">
+                        <p>&copy; LAB_BD11 2440049241 - 2440014894
+                            <p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </section>
+    <script src="./assets/js/subscribe.js"></script>
+    <script src="./assets/js/base.js"></script>
+</body>
+
+</html>

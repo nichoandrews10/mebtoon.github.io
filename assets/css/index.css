@@ -1,0 +1,317 @@
+/* * {
+    outline: 1px solid #f00 !important;
+} */
+
+
+/* imgslider */
+
+.slideshow {
+    /* fit content */
+    height: 40vh;
+}
+
+.imgslider-container {
+    /* width: 100vw; */
+    position: relative;
+}
+
+.imgslider-container>.imgslider-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.imgslider-container>.imgslider-page>.imgslider-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.imgslider-container>.imgslider-page>.imgslider-text-container>.imgslider-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--color-white);
+    margin-bottom: 0px;
+}
+
+.imgslider-container>.imgslider-page>.imgslider-text-container>.imgslider-author {
+    font-size: 1rem;
+    color: var(--color-white);
+    margin-bottom: 0px;
+}
+
+
+/* @media screen and (max-width: 800px) {
+    .imgslider-container {
+        height: 10vh;
+    }
+} */
+
+
+/* tagline */
+
+.tagline-container {
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-white);
+    padding: 100px 0px;
+    cursor: default;
+}
+
+.tagline-container>.tagline-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    text-align: center;
+    margin: 10px 20px 30px 20px;
+}
+
+.subscribe-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.subscribe-btn:hover {
+    box-shadow: 0px 0px 10px var(--color-primary);
+}
+
+
+/* toons cards */
+
+.toons-cards {
+    background-color: #f4f4f4;
+    /* width: 100vw; */
+}
+
+.toons-cards>.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.toons-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.toons-card {
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    width: 190px;
+    margin: 10px 10px;
+    background-color: var(--color-white);
+    background-size: contain;
+    overflow: hidden;
+    transition: 0.3s;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 435px) {
+    .toons-cards-container {
+        flex-direction: column;
+    }
+    .toons-card {
+        /* width: 100%; */
+        flex-wrap: nowrap;
+        width: 90%;
+    }
+}
+
+.toons-card>.toons-card-info {
+    height: 100%;
+    height: 100%;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.toons-card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--color-text-primary);
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.toons-card-subscribers {
+    font-size: 0.9rem;
+    color: var(--color-primary);
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.toons-card-author {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-shadow: #f4f4f4 0px 0px 10px;
+}
+
+.toons-card-info>.toons-card-genre {
+    font-size: 0.8rem;
+    color: var(--color-text-secondary);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.toons-card>.toons-card-description {
+    height: 100%;
+    font-size: 0.7rem;
+    color: var(--color-white);
+    padding: 10px;
+    background-color: var(--color-primary);
+    display: none;
+}
+
+.toons-card:hover {
+    box-shadow: -7px 8px 0px 2px rgba(0, 0, 0, 1);
+}
+
+.toons-card:hover>.toons-card-info {
+    display: none;
+    cursor: pointer;
+}
+
+.toons-card:hover>.toons-card-description {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* tops */
+
+.tops-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.tops-container>.col {
+    width: 40%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tops-container>.col>.tops-title>a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-text-primary);
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.tops-container>.col>.tops-title>a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+    .tops-container>.col {
+        width: 100%;
+    }
+}
+
+.tops-container>.col>.tops-cards-container>.tops-card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--color-white);
+    align-items: center;
+    transition: 0.3s;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: var(--color-text-primary);
+    border-radius: 10px;
+    /* padding: 5px 0px; */
+}
+
+.tops-container>.col>.tops-cards-container>.tops-card:hover {
+    cursor: pointer;
+    /* box-shadow: -7px 8px 0px 2px rgba(0, 0, 0, 1); */
+    /* light dark shadow */
+    box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.tops-card-subscribers {
+    font-size: 0.9rem;
+    color: var(--color-primary);
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.tops-card-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-text-primary);
+    margin: 0px 10px;
+    height: 100%;
+}
+
+.tops-container>.col>.tops-cards-container>.tops-card>.tops-card-thumbnail>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tops-container>.col>.tops-cards-container>.tops-card>.tops-card-thumbnail {
+    width: 100px;
+    height: 100px;
+    margin: 0px 10px 0px 0px;
+}
+
+.tops-card-info {
+    max-height: 100px;
+}
+
+.tops-card-genre {
+    font-size: 0.8rem;
+    color: var(--color-text-secondary);
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.tops-card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--color-text-primary);
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.tops-card-author {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
